@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BookServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BookServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.group.libraryapp.service.book.html">com.group.libraryapp.service.book</a> &gt; BookServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.185s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">책 대여 권수를 정상 확인한다</td>
+<td class="success">countLoanedBookTest()</td>
+<td class="success">0.165s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">분야별 책 권수를 정상 확인한다</td>
+<td class="success">getBookStatisticsTest()</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">책이 진작 대출되어 있다면, 신규 대출이 실패한다.</td>
+<td class="success">loanBookFailTest()</td>
+<td class="success">0.138s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">책 대출이 정상 동작한다.</td>
+<td class="success">loanBookTest()</td>
+<td class="success">1.683s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">책 반납이 정상 동작한다</td>
+<td class="success">returnBookTest()</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">책 등록이 정상 동작한다.</td>
+<td class="success">saveBookTest()</td>
+<td class="success">0.043s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>23:03:02.955 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:03:02.971 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:03:03.031 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.group.libraryapp.service.book.BookServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:03:03.055 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group.libraryapp.service.book.BookServiceTest], using SpringBootContextLoader
+23:03:03.061 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.group.libraryapp.service.book.BookServiceTest]: class path resource [com/group/libraryapp/service/book/BookServiceTest-context.xml] does not exist
+23:03:03.061 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.group.libraryapp.service.book.BookServiceTest]: class path resource [com/group/libraryapp/service/book/BookServiceTestContext.groovy] does not exist
+23:03:03.061 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.group.libraryapp.service.book.BookServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:03:03.062 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.group.libraryapp.service.book.BookServiceTest]: BookServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:03:03.161 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.group.libraryapp.service.book.BookServiceTest]
+23:03:03.279 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/user/Desktop/Kotlin_Spring_Library_Application/library-app/library-app/build/classes/kotlin/main/com/group/libraryapp/LibraryAppApplication.class]
+23:03:03.283 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.group.libraryapp.LibraryAppApplication for test class com.group.libraryapp.service.book.BookServiceTest
+23:03:03.426 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.group.libraryapp.service.book.BookServiceTest]: using defaults.
+23:03:03.428 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:03:03.455 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b3c354a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78fb9a67, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@73ff4fae, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@21aa6d6c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@b968a76, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2f9a01c1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2611b9a3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@54227100, org.springframework.test.context.event.EventPublishingTestExecutionListener@6b5894c8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1433046b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3f446bef, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7829b776, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5778826f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b64c4b7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4763c727]
+23:03:03.461 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4f2613d1 testClass = BookServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6d24ffa1 testClass = BookServiceTest, locations = '{}', classes = '{class com.group.libraryapp.LibraryAppApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4ae9cfc1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4b23c30a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f0100a7, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1c33c17b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@c94fd30, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7748410a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.8)
+
+[23:03:04.029][INFO ][com.group.libraryapp.service.book.BookServiceTest.logStarting:line55] - Starting BookServiceTest using Java 17.0.9 on seulgi.local with PID 73246 (started by user in /Users/user/Desktop/Kotlin_Spring_Library_Application/library-app/library-app)
+[23:03:04.031][INFO ][com.group.libraryapp.service.book.BookServiceTest.logStartupProfileInfo:line645] - No active profile set, falling back to 1 default profile: &quot;default&quot;
+[23:03:05.450][INFO ][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:line132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[23:03:05.578][INFO ][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:line201] - Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+[23:03:06.649][INFO ][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:line31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[23:03:06.759][INFO ][org.hibernate.Version.logVersion:line44] - HHH000412: Hibernate ORM core version 5.6.9.Final
+[23:03:06.971][INFO ][org.hibernate.annotations.common.Version.&lt;clinit&gt;:line56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[23:03:07.095][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[23:03:07.536][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[23:03:07.574][INFO ][org.hibernate.dialect.Dialect.&lt;init&gt;:line175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[23:03:08.175][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34malter?[0m ?[34mtable?[0m user_loan_history 
+       ?[34mdrop?[0m 
+       ?[34mforeign?[0m ?[34mkey?[0m FKa17jbf1po26eytdyvyj73b4rw
+?[35m[Hibernate]?[0m 
+    
+    ?[34malter?[0m ?[34mtable?[0m user_loan_history 
+       ?[34mdrop?[0m 
+       ?[34mforeign?[0m ?[34mkey?[0m FKa17jbf1po26eytdyvyj73b4rw
+[23:03:08.205][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m book
+?[35m[Hibernate]?[0m 
+    
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m book
+[23:03:08.224][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m ?[34muser?[0m
+?[35m[Hibernate]?[0m 
+    
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m ?[34muser?[0m
+[23:03:08.231][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m user_loan_history
+?[35m[Hibernate]?[0m 
+    
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m user_loan_history
+[23:03:08.241][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34mcreate?[0m ?[34mtable?[0m book (
+       id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m auto_increment,
+        name ?[34mvarchar?[0m(255),
+        type ?[34mvarchar?[0m(255),
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    ) engine=InnoDB
+?[35m[Hibernate]?[0m 
+    
+    ?[34mcreate?[0m ?[34mtable?[0m book (
+       id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m auto_increment,
+        name ?[34mvarchar?[0m(255),
+        type ?[34mvarchar?[0m(255),
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    ) engine=InnoDB
+[23:03:08.251][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34mcreate?[0m ?[34mtable?[0m ?[34muser?[0m (
+       id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m auto_increment,
+        age ?[34minteger?[0m,
+        name ?[34mvarchar?[0m(255),
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    ) engine=InnoDB
+?[35m[Hibernate]?[0m 
+    
+    ?[34mcreate?[0m ?[34mtable?[0m ?[34muser?[0m (
+       id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m auto_increment,
+        age ?[34minteger?[0m,
+        name ?[34mvarchar?[0m(255),
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    ) engine=InnoDB
+[23:03:08.260][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34mcreate?[0m ?[34mtable?[0m user_loan_history (
+       id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m auto_increment,
+        book_name ?[34mvarchar?[0m(255),
+        status ?[34minteger?[0m,
+        user_id ?[34mbigint?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    ) engine=InnoDB
+?[35m[Hibernate]?[0m 
+    
+    ?[34mcreate?[0m ?[34mtable?[0m user_loan_history (
+       id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m auto_increment,
+        book_name ?[34mvarchar?[0m(255),
+        status ?[34minteger?[0m,
+        user_id ?[34mbigint?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    ) engine=InnoDB
+[23:03:08.275][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    
+    ?[34malter?[0m ?[34mtable?[0m user_loan_history 
+       ?[34madd?[0m ?[34mconstraint?[0m FKa17jbf1po26eytdyvyj73b4rw 
+       ?[34mforeign?[0m ?[34mkey?[0m (user_id) 
+       ?[34mreferences?[0m ?[34muser?[0m (id)
+?[35m[Hibernate]?[0m 
+    
+    ?[34malter?[0m ?[34mtable?[0m user_loan_history 
+       ?[34madd?[0m ?[34mconstraint?[0m FKa17jbf1po26eytdyvyj73b4rw 
+       ?[34mforeign?[0m ?[34mkey?[0m (user_id) 
+       ?[34mreferences?[0m ?[34muser?[0m (id)
+[23:03:08.307][INFO ][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:line52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[23:03:08.323][INFO ][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:line437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[23:03:10.891][WARN ][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:line219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[23:03:12.120][INFO ][com.group.libraryapp.service.book.BookServiceTest.logStarted:line61] - Started BookServiceTest in 8.589 seconds (JVM running for 10.36)
+[23:03:12.733][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:12.746][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:12.748][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [COMPUTER]
+[23:03:12.818][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:12.820][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line52] - binding parameter [1] as [INTEGER] - [null]
+[23:03:12.821][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [김슬기]
+[23:03:13.216][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_ 
+    ?[34mwhere?[0m
+        book0_.name=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_ 
+    ?[34mwhere?[0m
+        book0_.name=?
+[23:03:13.222][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:13.231][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [1]
+[23:03:13.233][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:13.235][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:13.385][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.book_name=? 
+        ?[34mand?[0m userloanhi0_.status=? limit ?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.book_name=? 
+        ?[34mand?[0m userloanhi0_.status=? limit ?
+[23:03:13.390][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:13.391][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [1]
+[23:03:13.637][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.name=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.name=?
+[23:03:13.641][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [김슬기]
+[23:03:13.646][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_1_] : [BIGINT]) - [1]
+[23:03:13.647][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_] : [INTEGER]) - [null]
+[23:03:13.648][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_] : [VARCHAR]) - [김슬기]
+[23:03:13.656][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+[23:03:13.660][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:13.660][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [1]
+[23:03:13.661][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [3] as [BIGINT] - [1]
+[23:03:13.696][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_
+[23:03:13.708][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_] : [BIGINT]) - [1]
+[23:03:13.710][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:13.711][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_] : [INTEGER]) - [LOANED]
+[23:03:13.711][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_] : [BIGINT]) - [1]
+[23:03:13.715][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_0_,
+        user0_.age ?[34mas?[0m age2_1_0_,
+        user0_.name ?[34mas?[0m name3_1_0_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_0_,
+        user0_.age ?[34mas?[0m age2_1_0_,
+        user0_.name ?[34mas?[0m name3_1_0_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.id=?
+[23:03:13.716][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [1]
+[23:03:13.721][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_0_] : [INTEGER]) - [null]
+[23:03:13.722][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_0_] : [VARCHAR]) - [김슬기]
+[23:03:13.800][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+[23:03:13.803][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [1]
+[23:03:13.804][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:13.804][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:13.813][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+[23:03:13.813][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [1]
+[23:03:13.830][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+[23:03:13.831][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_1_] : [BIGINT]) - [1]
+[23:03:13.832][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_] : [INTEGER]) - [null]
+[23:03:13.832][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_] : [VARCHAR]) - [김슬기]
+[23:03:13.834][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+[23:03:13.835][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [1]
+[23:03:13.838][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_1_] : [BIGINT]) - [1]
+[23:03:13.839][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_1_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:13.839][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_1_] : [INTEGER]) - [LOANED]
+[23:03:13.839][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_1_] : [BIGINT]) - [1]
+[23:03:13.839][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_0_] : [BIGINT]) - [1]
+[23:03:13.840][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_0_] : [BIGINT]) - [1]
+[23:03:13.843][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+[23:03:13.844][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [1]
+[23:03:13.845][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+[23:03:13.846][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [1]
+[23:03:13.898][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:13.899][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [A]
+[23:03:13.899][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [COMPUTER]
+[23:03:13.900][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:13.901][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [B]
+[23:03:13.901][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [COMPUTER]
+[23:03:13.902][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:13.902][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [C]
+[23:03:13.903][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [SCIENCE]
+[23:03:13.916][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.type ?[34mas?[0m col_0_0_,
+        count(book0_.id) ?[34mas?[0m col_1_0_ 
+    ?[34mfrom?[0m
+        book book0_ 
+    ?[34mgroup?[0m ?[34mby?[0m
+        book0_.type
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.type ?[34mas?[0m col_0_0_,
+        count(book0_.id) ?[34mas?[0m col_1_0_ 
+    ?[34mfrom?[0m
+        book book0_ 
+    ?[34mgroup?[0m ?[34mby?[0m
+        book0_.type
+[23:03:13.918][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([col_0_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:13.918][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([col_1_0_] : [BIGINT]) - [2]
+[23:03:13.918][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([col_0_0_] : [VARCHAR]) - [SCIENCE]
+[23:03:13.918][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([col_1_0_] : [BIGINT]) - [1]
+[23:03:13.927][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+[23:03:13.928][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [2]
+[23:03:13.929][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [A]
+[23:03:13.929][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:13.929][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [3]
+[23:03:13.929][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [B]
+[23:03:13.930][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:13.930][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [4]
+[23:03:13.930][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [C]
+[23:03:13.931][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [SCIENCE]
+[23:03:13.932][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+[23:03:13.933][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [2]
+[23:03:13.934][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+[23:03:13.937][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [3]
+[23:03:13.938][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+[23:03:13.939][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [4]
+[23:03:13.943][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+[23:03:13.975][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:13.975][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:13.976][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [COMPUTER]
+[23:03:13.980][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:13.981][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line52] - binding parameter [1] as [INTEGER] - [null]
+[23:03:13.981][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [김슬기]
+[23:03:14.021][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+[23:03:14.022][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:14.023][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [1]
+[23:03:14.023][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [3] as [BIGINT] - [2]
+[23:03:14.044][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_ 
+    ?[34mwhere?[0m
+        book0_.name=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_ 
+    ?[34mwhere?[0m
+        book0_.name=?
+[23:03:14.047][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:14.049][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [5]
+[23:03:14.050][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.050][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:14.051][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.book_name=? 
+        ?[34mand?[0m userloanhi0_.status=? limit ?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.book_name=? 
+        ?[34mand?[0m userloanhi0_.status=? limit ?
+[23:03:14.052][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:14.052][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [1]
+[23:03:14.054][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_] : [BIGINT]) - [2]
+[23:03:14.055][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.055][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_] : [INTEGER]) - [LOANED]
+[23:03:14.055][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_] : [BIGINT]) - [2]
+[23:03:14.056][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_0_,
+        user0_.age ?[34mas?[0m age2_1_0_,
+        user0_.name ?[34mas?[0m name3_1_0_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_0_,
+        user0_.age ?[34mas?[0m age2_1_0_,
+        user0_.name ?[34mas?[0m name3_1_0_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.id=?
+[23:03:14.060][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [2]
+[23:03:14.065][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_0_] : [INTEGER]) - [null]
+[23:03:14.068][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_0_] : [VARCHAR]) - [김슬기]
+[23:03:14.077][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+[23:03:14.083][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [5]
+[23:03:14.084][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.084][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:14.085][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.085][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [5]
+[23:03:14.088][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+[23:03:14.090][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_1_] : [BIGINT]) - [2]
+[23:03:14.090][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_] : [INTEGER]) - [null]
+[23:03:14.091][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_] : [VARCHAR]) - [김슬기]
+[23:03:14.092][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+[23:03:14.093][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [2]
+[23:03:14.094][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_1_] : [BIGINT]) - [2]
+[23:03:14.095][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_1_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.095][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_1_] : [INTEGER]) - [LOANED]
+[23:03:14.095][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_1_] : [BIGINT]) - [2]
+[23:03:14.095][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_0_] : [BIGINT]) - [2]
+[23:03:14.095][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_0_] : [BIGINT]) - [2]
+[23:03:14.096][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.097][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [2]
+[23:03:14.099][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.099][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [2]
+[23:03:14.117][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:14.118][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:14.118][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [COMPUTER]
+[23:03:14.122][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:14.122][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line52] - binding parameter [1] as [INTEGER] - [null]
+[23:03:14.122][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [김슬기]
+[23:03:14.126][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+[23:03:14.127][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:14.127][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [1]
+[23:03:14.127][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [3] as [BIGINT] - [3]
+[23:03:14.135][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.name=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.name=?
+[23:03:14.136][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [김슬기]
+[23:03:14.138][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_1_] : [BIGINT]) - [3]
+[23:03:14.139][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_] : [INTEGER]) - [null]
+[23:03:14.139][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_] : [VARCHAR]) - [김슬기]
+[23:03:14.140][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+[23:03:14.140][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [3]
+[23:03:14.142][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_1_] : [BIGINT]) - [3]
+[23:03:14.142][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_1_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.143][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_1_] : [INTEGER]) - [LOANED]
+[23:03:14.143][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_1_] : [BIGINT]) - [3]
+[23:03:14.143][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_0_] : [BIGINT]) - [3]
+[23:03:14.143][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_0_] : [BIGINT]) - [3]
+[23:03:14.144][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mupdate?[0m
+        user_loan_history 
+    ?[34mset?[0m
+        book_name=?,
+        status=?,
+        user_id=? 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mupdate?[0m
+        user_loan_history 
+    ?[34mset?[0m
+        book_name=?,
+        status=?,
+        user_id=? 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.145][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:14.145][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [0]
+[23:03:14.145][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [3] as [BIGINT] - [3]
+[23:03:14.145][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [4] as [BIGINT] - [3]
+[23:03:14.149][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.id ?[34mas?[0m id1_2_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_,
+        userloanhi0_.status ?[34mas?[0m status3_2_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_
+[23:03:14.150][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_] : [BIGINT]) - [3]
+[23:03:14.151][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.152][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_] : [INTEGER]) - [RETURNED]
+[23:03:14.152][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_] : [BIGINT]) - [3]
+[23:03:14.153][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_0_,
+        user0_.age ?[34mas?[0m age2_1_0_,
+        user0_.name ?[34mas?[0m name3_1_0_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_0_,
+        user0_.age ?[34mas?[0m age2_1_0_,
+        user0_.name ?[34mas?[0m name3_1_0_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_ 
+    ?[34mwhere?[0m
+        user0_.id=?
+[23:03:14.154][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [3]
+[23:03:14.156][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_0_] : [INTEGER]) - [null]
+[23:03:14.157][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_0_] : [VARCHAR]) - [김슬기]
+[23:03:14.162][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+[23:03:14.166][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [6]
+[23:03:14.167][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.167][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:14.168][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.168][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [6]
+[23:03:14.173][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+[23:03:14.175][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_1_] : [BIGINT]) - [3]
+[23:03:14.175][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_] : [INTEGER]) - [null]
+[23:03:14.175][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_] : [VARCHAR]) - [김슬기]
+[23:03:14.176][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+[23:03:14.177][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [3]
+[23:03:14.178][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_1_] : [BIGINT]) - [3]
+[23:03:14.178][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_1_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.178][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_1_] : [INTEGER]) - [RETURNED]
+[23:03:14.179][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_1_] : [BIGINT]) - [3]
+[23:03:14.179][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_0_] : [BIGINT]) - [3]
+[23:03:14.179][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_0_] : [BIGINT]) - [3]
+[23:03:14.180][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.180][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [3]
+[23:03:14.181][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.182][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [3]
+[23:03:14.192][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        ?[34muser?[0m
+        (age, name) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:14.193][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line52] - binding parameter [1] as [INTEGER] - [null]
+[23:03:14.193][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [김슬기]
+[23:03:14.199][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+[23:03:14.206][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [A]
+[23:03:14.207][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [1]
+[23:03:14.207][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [3] as [BIGINT] - [4]
+[23:03:14.211][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+[23:03:14.211][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [B]
+[23:03:14.212][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [0]
+[23:03:14.212][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [3] as [BIGINT] - [4]
+[23:03:14.214][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        user_loan_history
+        (book_name, status, user_id) 
+    ?[34mvalues?[0m
+        (?, ?, ?)
+[23:03:14.215][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [C]
+[23:03:14.215][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [INTEGER] - [0]
+[23:03:14.215][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [3] as [BIGINT] - [4]
+[23:03:14.272][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        count(userloanhi0_.id) ?[34mas?[0m col_0_0_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.status=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        count(userloanhi0_.id) ?[34mas?[0m col_0_0_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.status=?
+[23:03:14.282][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [INTEGER] - [1]
+[23:03:14.291][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([col_0_0_] : [BIGINT]) - [1]
+[23:03:14.306][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+[23:03:14.310][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+[23:03:14.312][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_1_] : [BIGINT]) - [4]
+[23:03:14.312][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line50] - extracted value ([age2_1_] : [INTEGER]) - [null]
+[23:03:14.313][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name3_1_] : [VARCHAR]) - [김슬기]
+[23:03:14.315][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_0_,
+        userloanhi0_.id ?[34mas?[0m id1_2_1_,
+        userloanhi0_.book_name ?[34mas?[0m book_nam2_2_1_,
+        userloanhi0_.status ?[34mas?[0m status3_2_1_,
+        userloanhi0_.user_id ?[34mas?[0m user_id4_2_1_ 
+    ?[34mfrom?[0m
+        user_loan_history userloanhi0_ 
+    ?[34mwhere?[0m
+        userloanhi0_.user_id=?
+[23:03:14.316][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [4]
+[23:03:14.320][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_1_] : [BIGINT]) - [4]
+[23:03:14.321][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_1_] : [VARCHAR]) - [A]
+[23:03:14.322][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_1_] : [INTEGER]) - [LOANED]
+[23:03:14.322][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_1_] : [BIGINT]) - [4]
+[23:03:14.323][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_0_] : [BIGINT]) - [4]
+[23:03:14.324][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_0_] : [BIGINT]) - [4]
+[23:03:14.324][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_1_] : [BIGINT]) - [5]
+[23:03:14.324][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_1_] : [VARCHAR]) - [B]
+[23:03:14.324][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_1_] : [INTEGER]) - [RETURNED]
+[23:03:14.325][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_1_] : [BIGINT]) - [4]
+[23:03:14.325][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_0_] : [BIGINT]) - [4]
+[23:03:14.325][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_0_] : [BIGINT]) - [5]
+[23:03:14.325][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_1_] : [BIGINT]) - [6]
+[23:03:14.326][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([book_nam2_2_1_] : [VARCHAR]) - [C]
+[23:03:14.326][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([status3_2_1_] : [INTEGER]) - [RETURNED]
+[23:03:14.327][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_1_] : [BIGINT]) - [4]
+[23:03:14.327][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([user_id4_2_0_] : [BIGINT]) - [4]
+[23:03:14.328][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_2_0_] : [BIGINT]) - [6]
+[23:03:14.330][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.331][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [4]
+[23:03:14.337][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.337][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [5]
+[23:03:14.338][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        user_loan_history 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.339][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [6]
+[23:03:14.340][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        ?[34muser?[0m 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.340][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [4]
+[23:03:14.372][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        book
+        (name, type) 
+    ?[34mvalues?[0m
+        (?, ?)
+[23:03:14.374][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [VARCHAR] - [이상한 나라의 앨리스]
+[23:03:14.374][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [2] as [VARCHAR] - [COMPUTER]
+[23:03:14.383][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+[23:03:14.388][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [7]
+[23:03:14.388][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.389][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:14.396][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        book0_.id ?[34mas?[0m id1_0_,
+        book0_.name ?[34mas?[0m name2_0_,
+        book0_.type ?[34mas?[0m type3_0_ 
+    ?[34mfrom?[0m
+        book book0_
+[23:03:14.398][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([id1_0_] : [BIGINT]) - [7]
+[23:03:14.398][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([name2_0_] : [VARCHAR]) - [이상한 나라의 앨리스]
+[23:03:14.398][TRACE][org.hibernate.type.descriptor.sql.BasicExtractor.extract:line60] - extracted value ([type3_0_] : [VARCHAR]) - [COMPUTER]
+[23:03:14.400][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+?[35m[Hibernate]?[0m 
+    ?[34mdelete?[0m 
+    ?[34mfrom?[0m
+        book 
+    ?[34mwhere?[0m
+        id=?
+[23:03:14.400][TRACE][org.hibernate.type.descriptor.sql.BasicBinder.bind:line64] - binding parameter [1] as [BIGINT] - [7]
+[23:03:14.404][DEBUG][org.hibernate.SQL.logStatement:line144] - 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        user0_.id ?[34mas?[0m id1_1_,
+        user0_.age ?[34mas?[0m age2_1_,
+        user0_.name ?[34mas?[0m name3_1_ 
+    ?[34mfrom?[0m
+        ?[34muser?[0m user0_
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 2023. 11. 27. 오후 11:03:14</p>
+</div>
+</div>
+</body>
+</html>
